@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+             }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            padding: 10px 90px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.5);
+
+        }
+
+        nav .logo{
+            padding: 22px 20px;
+            height: 80px;
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            
+        }
+
+        nav ul{
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li a{
+            line-height: 80px;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            background: rgba(0, 0, 0, 0.959);
+            border-radius: 6px ;
+        }
+
+    
+        nav ul li a.active{
+            background: #e2472f; 
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+            background: url('assets/images/nav.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        nav .image{
+            width: 50px;
+            height: 50px;
+        }
+        .btn{
+            background-color:green
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav>
+            <div class="logo">Logo</div>
+            <ul>
+                <li><a class="active" routerLink="/">Home</a></li>
+                <li><a routerLink="login">Login</a></li>
+                <li><a routerLink="register">Sign Up</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Feedbacks</a></li>
+            </ul>
+        </nav>
+        <section></section>
+    </div>
+    <button type="button" class="btn">Success</button>
+    
+</body>
+</html>
